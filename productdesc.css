@@ -1,0 +1,76 @@
+#imagediv{
+    width: 50%;
+    border: 4px solid crimson;
+    padding: 20px;
+}
+#details{
+    width: 50%;
+    border: 3px solid black;
+    padding: 20px;
+}
+#desc>div{
+    display: flex;
+    gap: 10px;
+}
+#imagediv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#imagediv>img{
+    width: 100%;
+}
+#smallbutton{
+   display: flex;
+   gap: 20px;
+}
+#smallbutton>button{
+    height: 30px;
+     font-size: 14px;
+     border-radius: 10px;
+     background-color: rgb(217,217,217);
+     color: rgb(136,140,158);
+     font-weight: bold;
+     padding: 5px 10px;
+     border: none;
+}
+#rate{
+    width: 120px;
+    height: 50px;
+    /* border: 1px solid black; */
+    margin-bottom: -15px;
+}
+#rating{
+    display: flex;
+    align-items: center;
+    margin-bottom :10px;
+}
+#rating>p #ionheart{
+ 
+  padding: 10px;
+}
+ .addTocartpage{
+    color: white;
+    background-color: rgb(36,174,177);
+    background: #24aeb1;
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: LatoBold !important;
+    font-size: 16px;
+    padding: 16px 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 155px;
+}
+#expiry{
+    display: flex;
+    justify-content: space-between;
+}
+#detai#expiry+p{
+    color: rgb(137,136,140);
+    font-size: 25px;
+}
+
+
