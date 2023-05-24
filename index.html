@@ -4,9 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Here stylesheet is connected -->
+    <link rel="stylesheet" href="index.css">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <script
+    src="https://kit.fontawesome.com/f7dfcdf24b.js"
+    crossorigin="anonymous">
+  </script>
+    
     <title>Header</title>
 </head>
 <body>
+    <div id="raw1">
+        <div id="logo1">
+            <img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt="">
+        </div>
+        <div id="insideRaw1">
+          <div>
+            <input type="number" placeholder="Deliver to 110002" id="pincode">
+          </div>
+          <div>
+            <input type="text" placeholder="Search for medicine & wellness products..." id="searchtab">
+          </div>
+        </div> 
+        <a  href="#####">
+            <div>
+              <i class="fa-sharp fa-solid fa-file-arrow-up"></i> Upload
+            </div>
+        </a>
+        <a  href="#####">
+          <div>
+            <i class="fa-sharp fa-solid fa-tag"></i> Offer
+          </div>
+        </a>
+        <a  href="#####">
+          <div>
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i> Cart
+          </div>
+        </a>
+        <a  href="#####">
+          <div>
+            <i class="fa-sharp fa-solid fa-circle-user"></i> Sign in/Sign up
+        </div>
+        </a>
+    </div>
+    <div id="raw2">
+        <div class="navbar">
+          <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\medicine.svg" alt="">
+          <p>Medicine</p>
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="navbar">
+          <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\wellness.svg"   alt="">
+          <p>Wellness</p>
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="navbar">
+          <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\diagnostics.svg" alt="">
+          <p>Lab Tests</p>
+        </div>
+        <div class="navbar">
+          <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\wellness.svg" alt="">
+          <p>Beauty</p>
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </div class="navbar">
+        <div class="navbar">
+          <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\health-library.svg" alt="">
+          <p>Health Corner</p>
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+    </div>
+
+    <!-- raw3 -->
+    <div class="btn-group">
+      <button>COVID Essentials</button>
+      <button>Diabetes</button>
+      <button>Veteriary</button>
+      <button>Eyewear</button>
+      <button>Ayush</button>
+      <button>Ayurvedic</button>
+      <button>Homeopathy</button>
+      <button>Fitness</button>
+      <button>Mom & Baby</button>
+      <button>Devices</button>
+      <button>Surgicals</button>
+      <button>Sexual wellness</button>
+      <button>Treatments</button>
+    </div>
+
+    <div id="body2">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+  
+          <div class="slide" id="MakeItSlide">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851491_Home_Bannerxgsdg.jpg" />
+          </div>
+  
+          <div class="slide">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870669_Web_Home_Bannersdsgdsf.jpg" alt="Cosmetic Product" />
+          </div>
+  
+          <div class="slide">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870704_Web_Home_Bannersvbvv.jpg" alt="Cosmetic Product" />
+          </div>
+  
+          <div class="slide">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1681404025_Web_Home_Bannerggr.jpg" alt="Cosmetic Product" />
+          </div>
+        </div>
+      </div>
+  
+      <div id="raw4">
+          <div class="raw4div">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Beautynew.svg" alt="">
+            <p>Order Medicine</p><br><P>save up to 25% off</P>
+          </div>
+          <div></div>
+          <div></div>
+      </div>
+  
+    </div>
+    
     
 </body>
 </html>
+
+<script>
+  var count = 1;
+
+  setInterval(function () {
+    document.getElementById("radio" + count).checked = true;
+    count++;
+    if (count > 4) {
+      count = 1;
+    }
+  }, 3000);
+</script>
