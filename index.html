@@ -17,6 +17,10 @@
   </script>
     
     <title>Header</title>
+    
+    
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <div id="raw1">
@@ -122,79 +126,161 @@
 <!-- ============================= -->
 
 <!-------------Animation Part--------------->
+<div id="body2">
 
-    <div id="body2">
-      <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-  
-          <div class="slide" id="MakeItSlide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851491_Home_Bannerxgsdg.jpg" />
-          </div>
-  
-          <div class="slide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870669_Web_Home_Bannersdsgdsf.jpg" alt="Cosmetic Product" />
-          </div>
-  
-          <div class="slide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870704_Web_Home_Bannersvbvv.jpg" alt="Cosmetic Product" />
-          </div>
-  
-          <div class="slide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1681404025_Web_Home_Bannerggr.jpg" alt="Cosmetic Product" />
-          </div>
+  <div class="container">
+    <!--Show Slideshow here-->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851491_Home_Bannerxgsdg.jpg" alt="">
         </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1681404025_Web_Home_Bannerggr.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870669_Web_Home_Bannersdsgdsf.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684503989_Wellness_web.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1681404025_Web_Home_Bannerggr.jpg" alt="">
+        </div>
+        ...
       </div>
-  
-      <div id="raw4">
-          <div class="raw4div">
-            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Wellnessnew.svg" alt="">
-            <div>
-              <h3>Order Medicine</h3>
-              <p>Save Upto 25% off</p>
-            </div>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-
-          <div class="raw4div">
-            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Beautynew.svg" alt="">
-            <div>
-              <h3>Beauty</h3>
-              <p>Save Upto 40% off</p>
-            </div>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-
-          <div class="raw4div">
-            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\ordermedicinnew.svg" alt="">
-            <div>
-              <h3>Wellness</h3>
-              <p>Upto 80% off</p>
-            </div>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-         
-      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-  
+  </div>
+<br>
+
+
   <!--------------------------------------------------->
 
-  
+<div id="raw4">
+  <div class="raw4div">
+    <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Wellnessnew.svg" alt="">
+    <div>
+      <h3>Order Medicine</h3>
+      <p>Save Upto 25% off</p>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
+  <div class="raw4div">
+    <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Beautynew.svg" alt="">
+    <div>
+      <h3>Order Medicine</h3>
+      <p>Save Upto 25% off</p>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
+  <div class="raw4div">
+    <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\ordermedicinnew.svg" alt="">
+    <div>
+      <h3>Order Medicine</h3>
+      <p>Save Upto 25% off</p>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+    </div>
+  </div>
+  <!-- --------------------- -->
+
+  <div id="raw5">
+      <div id="raw5-1">
+        <h2>Continue Purchase</h2>
+        <p> Pick up where you left off.</p>
+      </div>
+      <i class="fa-solid fa-circle-chevron-right"></i>
+      <div id="raw5inside">
+          <img src="https://www.netmeds.com/images/product-v1/150x150/354472/softovac_sf_powder_100gm_0.jpg" alt="">
+          <div id="inside">
+            <h2>Softovac SF Sugar Free Powder 100gm</h2>
+            <p> + 1 more items in cart</p>
+          </div>
+          <div id="inside2">
+            <h4>Cart Total ₹332.25</h4>
+            <p>Total Savings ₹46.75</p>
+          </div>
+          <button>Continue Purchase</button>
+      </div>
+  </div>
+  <!-- -----------raw6--------------- -->
+
+  <div id="raw6">
+    <div>
+      <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851934_hair_care_Mini_banner_web.jpg" alt="">
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851904_Fitness_Mini_banner_web.jpg" alt="">
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851919_Ayurvedic_Mini_banner_web.jpg" alt="">
+    </div>  
+  </div>
+  <!-- -----------raw7--------------- -->
+  <h2>Payment Partner Offers</h2>
+  <div id="raw7">
+    <div class="raw7class">
+      <img src="https://www.netmeds.com/images/cms/offers/1654235738_Icon_256x256.png" alt="">
+      <div>
+        <h4>Get up to Rs. 500 cashback* + Earn up to 8X rewards*..</h4>
+        <p>ALL users get Cashback between max. Rs. 500 & min. Rs. 100 on ONLY one transaction of min. Rs 999, P..</p>
+      </div>
+      
+    </div>
+    <div class="raw7class">
+      <img src="https://www.netmeds.com/images/cms/offers/1680274870_1675179642_1669825817_paytm.png" alt="">
+      <div>
+        <h4>Get up to Rs. 600 Paytm Cashback!..</h4>
+        <p>Get Paytm Cashback between max. Rs. 600 and minimum Rs. 30 on a minimum purchase of ANY products* wo..</p>
+      </div>
+    </div>
+    <div class="raw7class">
+      <img src="https://www.netmeds.com/images/cms/offers/1680274870_1675179642_1669825817_paytm.png" alt="">
+      <div>
+        <h4>Get up to Rs. 300 Paytm Cashback!..</h4>
+        <p>Get Paytm Cashback between max. Rs. 300 and min. Rs. 15 on a minimum purchase of ANY products* worth..</p>
+      </div>
+    </div>
+  </div>
+<!-- ---------------raw8------------------------ -->
+<h2>Shop By Category</h2>
+<div id="raw8">
+    <div>
+      <img src="https://www.netmeds.com/images/category/481/thumb/ayush_1.jpg" alt="">
+      <p>Ayush</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_2.jpg" alt="">
+      <p>Hair Care</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_1.jpg" alt="">
+      <p>Body Care</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/624/thumb/treatments_1.jpg" alt="">
+      <p>Treatments</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/821/thumb/cold_and_fever.jpg" alt="">
+      <p>Cold And Fever</p>
+    </div>
     
+</div>
+</div>   
 </body>
 </html>
 
-<script>
-  var count = 1;
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 
-  setInterval(function () {
-    document.getElementById("radio" + count).checked = true;
-    count++;
-    if (count > 4) {
-      count = 1;
-    }
-  }, 3000);
-</script>
+
+
