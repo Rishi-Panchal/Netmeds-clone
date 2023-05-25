@@ -253,6 +253,9 @@ function displayData(){
 
         var image=document.createElement("img");
         image.setAttribute("src",ele.img1);
+        image.addEventListener("click",function(){
+            nextPage(ele);
+        })
 
         var divname=document.createElement("div");
         
@@ -316,6 +319,12 @@ function displayData(){
 
 
     })
+}
+var descItem=[];
+        function nextPage(ele){
+            descItem.push(ele);
+            localStorage.setItem("product-desc",JSON.stringify(descItem));
+             window.location.href="productdesc.html"
 }
 var prior=JSON.parse(localStorage.getItem("cart-product"))|| [];
 function addTocart(ele){

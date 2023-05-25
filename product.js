@@ -232,15 +232,23 @@ function displayData(){
         var div=document.createElement("div");
 
         
-
+        // var anchor =document.createElement("a");
+        // anchor.src=productdesc.html;
+       
+        
         var image=document.createElement("img");
         image.setAttribute("src",ele.img1);
-
+        image.addEventListener("click",function(){
+            nextPage(ele);
+        })
+        
+    //    anchor.append(image);
         var divname=document.createElement("div");
         
         
         var name=document.createElement('h3');
         name.textContent=ele.name;
+       
         divname.append(name)
 
         var divbtn=document.createElement("div");
@@ -298,6 +306,12 @@ function displayData(){
 
 
     })
+}
+var descItem=[];
+        function nextPage(ele){
+            descItem.push(ele);
+            localStorage.setItem("product-desc",JSON.stringify(descItem));
+             window.location.href="productdesc.html"
 }
 var prior=JSON.parse(localStorage.getItem("cart-product"))|| [];
 function addTocart(ele){

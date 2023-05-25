@@ -88,18 +88,12 @@ function displayData(){
         strikedprice.appendChild(span1); 
 
          var divd=document.createElement("div");
-         divd.style.fontFamily="sans-serif";
-         divd.style.color="#c4c4c4";
-         divd.style.fontWeight="bold"
-         divd.style.fontSize="15px"
 
          var per=document.createElement("p");
          per.textContent="(Inclusive of all taxes)";
-         
 
          var per1=document.createElement("p");
          per1.textContent="*Applicable coupon to be applied during checkout";
-
 
          var per2=document.createElement("p");
          per2.textContent="*This product cannot be returned for a refund or exchange.";
@@ -116,24 +110,11 @@ function displayData(){
          divd.append(per,per1,per2,per3,per4,per5);
 
          divmin=document.createElement("div");
-         divmin.style.borderRadius="10px"
-         divmin.style.marginBottom="10px"
-         divmin.style.padding="4px"
-         divmin.style.width="60%"
-         divmin.style.height="40px"
-         divmin.style.display="flex";
-         divmin.style.gap="150px"
-         divmin.style.alignItems="center";
-         divmin.style.backgroundColor="rgb(247,236,215)"
-         
 
          var pere=document.createElement("p");
-         pere.textContent="Minimum Order Quantity:10";
+         pere.textContent="Minimum Order Quantity: 3 know more";
 
-         var pere1=document.createElement("p");
-         pere1.textContent="3 know more"
-
-         divmin.append(pere,pere1);
+         divmin.append(pere);
 
          var button=document.createElement("button");
          button.textContent="ADD TO CART";
@@ -155,14 +136,13 @@ function displayData(){
 
          var delivery=document.createElement("p");
          delivery.textContent="Delivering To"
-         delivery.style.color="Black";
+         delivery.style.color="rgb(88,206,220)";
          delivery.style.fontSize="20px"
 
          var span3=document.createElement("span");
          span3.textContent=" 110002";
          span3.style.fontSize="25px"
-         
-         span3.style.color="rgb(88,206,220)";
+         span3.style.color="Black";
 
          var divavailibity=document.createElement("div");
          divavailibity.classList="divavailibity";
