@@ -248,7 +248,7 @@ var descItem=[];
         function nextPage(ele){
             descItem.push(ele);
             localStorage.setItem("product-desc",JSON.stringify(descItem));
-             window.location.href="ayurvedicdesc.html"
+             window.location.href="productdesc.html"
 }
 var prior=JSON.parse(localStorage.getItem("cart-product"))|| [];
 function addTocart(ele){
