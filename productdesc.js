@@ -138,9 +138,14 @@ function displayData(){
          var button=document.createElement("button");
          button.textContent="ADD TO CART";
          button.classList="addTocartpage"
-         button.addEventListener("click",()=>{
-            addToCartButton(ele);
-         })
+         button.addEventListener("click",function(){
+            if(check(ele.name)===false){
+                addToCartButton(ele)
+                alert('Item Added to Cart');
+            }else{
+                alert('This item is already added');
+            }
+        })
 
          var hr1=document.createElement("hr");
 
@@ -241,11 +246,21 @@ function displayData(){
     })
     
 }
+function check(name){
+    let checkCart=prior.filter(function(ele){
+        return name===ele.name;
+    })
+    if(checkCart.length>0){
+        return true;
+    }else{
+        return false;
+    }
+}
 var addToCartarr=JSON.parse(localStorage.getItem("cart-product"))|| [];
 function addToCartButton(ele){
         addToCartarr.push(ele);
         localStorage.setItem("cart-product",JSON.stringify(addToCartarr))
-        alert("Item added to cart");
+       
 }
 var contentDiv=document.getElementById("button-info");
     document.getElementById("a").style.backgroundColor="white";

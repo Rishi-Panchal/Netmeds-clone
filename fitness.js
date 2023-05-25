@@ -234,8 +234,13 @@ function displayData(){
 
         var cart=document.createElement("button");
         cart.textContent="ADD TO CART";
-        cart.addEventListener("click",()=>{
-            addTocart(ele);
+        cart.addEventListener("click",function(){
+            if(check(ele.name)===false){
+                addTocart(ele)
+                alert('Item Added to Cart');
+            }else{
+                alert('This item is already added');
+            }
         })
         addtocart.appendChild(cart);
         div.append(image,divname,divbtn,p,price,strikedprice);
@@ -245,6 +250,16 @@ function displayData(){
 
 
     })
+}
+function check(name){
+    let checkCart=prior.filter(function(ele){
+        return name===ele.name;
+    })
+    if(checkCart.length>0){
+        return true;
+    }else{
+        return false;
+    }
 }
 var descItem=[];
         function nextPage(ele){
