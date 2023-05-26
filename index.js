@@ -19,3 +19,14 @@ const swiper = new Swiper('.swiper', {
   
 
   });
+
+
+var swiper1 = new Swiper(".swiper-container", {
+  slidesPerView: 5,
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
