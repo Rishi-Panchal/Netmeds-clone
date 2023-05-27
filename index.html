@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     
     <!-- Here stylesheet is connected -->
     <link rel="stylesheet" href="index.css">
+    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    
     <link
     rel="stylesheet"
     type="text/css"
@@ -17,6 +28,10 @@
   </script>
     
     <title>Header</title>
+    
+    
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <div id="raw1">
@@ -68,14 +83,12 @@
           <div class="navbar">
             <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\medicine.svg" alt="">
             <p>Medicine</p>
-            <i class="fa-sharp fa-solid fa-caret-down"></i>
           </div>
         </li>
         <li>
           <div class="navbar">
             <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\wellness.svg"   alt="">
             <p>Wellness</p>
-            <i class="fa-sharp fa-solid fa-caret-down"></i>
           </div>
         </li>
         <li>
@@ -88,14 +101,12 @@
           <div class="navbar">
             <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\wellness.svg" alt="">
             <p>Beauty</p>
-            <i class="fa-sharp fa-solid fa-caret-down"></i>
           </div>
         </li>
         <li>
           <div class="navbar">
             <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\health-library.svg" alt="">
             <p>Health Corner</p>
-            <i class="fa-sharp fa-solid fa-caret-down"></i>
           </div>
         </li>
       </ul>
@@ -122,79 +133,404 @@
 <!-- ============================= -->
 
 <!-------------Animation Part--------------->
+<div id="body2">
 
-    <div id="body2">
-      <div class="slider">
-        <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-  
-          <div class="slide" id="MakeItSlide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851491_Home_Bannerxgsdg.jpg" />
-          </div>
-  
-          <div class="slide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870669_Web_Home_Bannersdsgdsf.jpg" alt="Cosmetic Product" />
-          </div>
-  
-          <div class="slide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870704_Web_Home_Bannersvbvv.jpg" alt="Cosmetic Product" />
-          </div>
-  
-          <div class="slide">
-            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1681404025_Web_Home_Bannerggr.jpg" alt="Cosmetic Product" />
-          </div>
+  <div class="container">
+    <!--Show Slideshow here-->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+        <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851491_Home_Bannerxgsdg.jpg" alt="">
         </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1681404025_Web_Home_Bannerggr.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870669_Web_Home_Bannersdsgdsf.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684503989_Wellness_web.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1681404025_Web_Home_Bannerggr.jpg" alt="">
+        </div>
+        ...
       </div>
-  
-      <div id="raw4">
-          <div class="raw4div">
-            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Wellnessnew.svg" alt="">
-            <div>
-              <h3>Order Medicine</h3>
-              <p>Save Upto 25% off</p>
-            </div>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-
-          <div class="raw4div">
-            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Beautynew.svg" alt="">
-            <div>
-              <h3>Beauty</h3>
-              <p>Save Upto 40% off</p>
-            </div>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-
-          <div class="raw4div">
-            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\ordermedicinnew.svg" alt="">
-            <div>
-              <h3>Wellness</h3>
-              <p>Upto 80% off</p>
-            </div>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-         
-      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-  
+  </div>
+<br>
+
+
   <!--------------------------------------------------->
 
-  
-    
+<div id="raw4">
+  <div class="raw4div">
+    <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Wellnessnew.svg" alt="">
+    <div>
+      <h3>Order Medicine</h3>
+      <p>Save Upto 25% off</p>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
+  <div class="raw4div">
+    <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\Beautynew.svg" alt="">
+    <div>
+      <h3>Order Medicine</h3>
+      <p>Save Upto 25% off</p>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
+  <div class="raw4div">
+    <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\ordermedicinnew.svg" alt="">
+    <div>
+      <h3>Order Medicine</h3>
+      <p>Save Upto 25% off</p>
+    </div>
+    <i class="fa-solid fa-chevron-right"></i>
+    </div>
+  </div>
+  <!-- --------------------- -->
+
+  <div id="raw5">
+      <div id="raw5-1">
+        <h2>Continue Purchase</h2>
+        <p> Pick up where you left off.</p>
+      </div>
+      <i class="fa-solid fa-circle-chevron-right"></i>
+      <div id="raw5inside">
+          <img src="https://www.netmeds.com/images/product-v1/150x150/354472/softovac_sf_powder_100gm_0.jpg" alt="">
+          <div id="inside">
+            <h2>Softovac SF Sugar Free Powder 100gm</h2>
+            <p> + 1 more items in cart</p>
+          </div>
+          <div id="inside2">
+            <h4>Cart Total ₹332.25</h4>
+            <p>Total Savings ₹46.75</p>
+          </div>
+          <button>Continue Purchase</button>
+      </div>
+  </div>
+  <!-- -----------raw6--------------- -->
+
+  <div id="raw6">
+    <div>
+      <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851934_hair_care_Mini_banner_web.jpg" alt="">
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851904_Fitness_Mini_banner_web.jpg" alt="">
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1684851919_Ayurvedic_Mini_banner_web.jpg" alt="">
+    </div>  
+  </div>
+  <!-- -----------raw7--------------- -->
+  <h2>Payment Partner Offers</h2>
+  <div id="raw7">
+    <div class="raw7class">
+      <img src="https://www.netmeds.com/images/cms/offers/1654235738_Icon_256x256.png" alt="">
+      <div>
+        <h4>Get up to Rs. 500 cashback* + Earn up to 8X rewards*..</h4>
+        <p>ALL users get Cashback between max. Rs. 500 & min. Rs. 100 on ONLY one transaction of min. Rs 999, P..</p>
+      </div>
+      
+    </div>
+    <div class="raw7class">
+      <img src="https://www.netmeds.com/images/cms/offers/1680274870_1675179642_1669825817_paytm.png" alt="">
+      <div>
+        <h4>Get up to Rs. 600 Paytm Cashback!..</h4>
+        <p>Get Paytm Cashback between max. Rs. 600 and minimum Rs. 30 on a minimum purchase of ANY products* wo..</p>
+      </div>
+    </div>
+    <div class="raw7class">
+      <img src="https://www.netmeds.com/images/cms/offers/1680274870_1675179642_1669825817_paytm.png" alt="">
+      <div>
+        <h4>Get up to Rs. 300 Paytm Cashback!..</h4>
+        <p>Get Paytm Cashback between max. Rs. 300 and min. Rs. 15 on a minimum purchase of ANY products* worth..</p>
+      </div>
+    </div>
+  </div>
+<!-- ---------------raw8------------------------ -->
+<h2>Shop By Category</h2>
+<div id="raw8">
+    <div>
+      <img src="https://www.netmeds.com/images/category/481/thumb/ayush_1.jpg" alt="">
+      <p>Ayush</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/v1/547/thumb/hair_care_2.jpg" alt="">
+      <p>Hair Care</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_1.jpg" alt="">
+      <p>Body Care</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/624/thumb/treatments_1.jpg" alt="">
+      <p>Treatments</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/category/821/thumb/cold_and_fever.jpg" alt="">
+      <p>Cold And Fever</p>
+    </div>  
+</div>
+
+<!-- ------------------raw9------------------ -->
+
+<h2>Top Brands</h2>
+<div id="raw9">
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/himalaya.jpg?v=15" alt="">
+      <p>Ayush</p>
+      <p>UP TO 35% OFF</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=15" alt="">
+      <p>Hair Care</p>
+      <p>UP TO 30% OFF</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/revital.jpg?v=15" alt="">
+      <p>Body Care</p>
+      <p>UP TO 15% OFF</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/volini.jpg?v=15" alt="">
+      <p>Treatments</p>
+      <p>UP TO 15% OFF</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/head-shoulders.jpg?v=15" alt="">
+      <p>Cold And Fever</p>
+      <p>UP TO 5% OFF</p>
+    </div>  
+</div>
+
+<!-- ----------------raw10----------------- -->
+
+<h2>Health Concerns</h2>
+<div id="raw10">
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg" alt="">
+      <p>Weight Care</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg" alt="">
+      <p>Women's Care</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg" alt="">
+      <p>Bone And Joint Pain</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg" alt="">
+      <p>Cold And Fever</p>
+    </div>
+    <div>
+      <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg" alt="">
+      <p>Lung Care</p>
+    </div>  
+</div>
+
+<!-- -------------raw11----------- -->
+
+<div id="raw11">
+    <h5>TODAY'S EXCLUSIVE</h5>
+    <p>Lightning Deals</p>
+    <p>Grab Before The Deal Ends</p>
+    <div id="raw11block">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+        <div class="raw11class">
+          <button class="btn">40% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858568/inlife_guggul_extract_capsules_60_s_0.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Guggul Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* <span style="color:#f15f95"> Rs. 299.40</span></p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+        <div class="raw11class">
+          <button class="btn">42% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858569/inlife_shatavari_extract_capsules_60_s_0.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Shatavari Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price*<span style="color:#f15f95">Rs. 299.40</span></p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+        <div class="raw11class">
+          <button class="btn">35% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/815204/healthvit_ginkgo_biloba_180_mg_capsules_60_s_0.jpg" alt="">
+          </div>
+          
+          <h4>HealthVit Ginkgo Biloba 180 mg Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs.<span style="color:#f15f95">Rs. 289.42</span></p>
+          <p>MRP Rs.650.00</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+        <div class="raw11class">
+          <button class="btn">35% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/815273/healthvit_horse_chestnut_500_mg_capsules_60_s_0.jpg" alt="">
+          </div>
+
+          <h4>HealthVit Horse Chestnut 500 mg Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs.<span style="color:#f15f95"> Rs. 359.42</span></p>
+          <p>MRP Rs. 459.00</p>
+          <div>
+            <button class="btn2">ADD TO CART</button>
+          </div>  
+        </div>
+        
+    </div>
+</div>
+<!-- ------------------------------------------- -->
+<div id="raw12">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="raw11class">
+          <button class="btn">45% OFF</button>
+          <div>
+            <img src="https://www.netmeds.com/images/product-v1/150x150/858567/inlife_triphala_extract_capsules_60s_78289_0_1.jpg" alt="">
+          </div>
+          
+          <h4>INLIFE Triphala Extract Capsules 60's</h4>
+          <p>Mkt: Inlife Pharma Private Limited</p>
+          <p>Best price* Rs. <span style="color:#f15f95">Rs. 252.45</span> </p>
+          <p>MRP Rs.</p>
+          <button class="btn2">ADD TO CART</button>
+        </div>
+    </div>
+      <!-- Add more slides here if needed -->
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+ 
+  <!---------------------------------------------  -->
+
+
+</div>   
 </body>
 </html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 
-<script>
-  var count = 1;
 
-  setInterval(function () {
-    document.getElementById("radio" + count).checked = true;
-    count++;
-    if (count > 4) {
-      count = 1;
-    }
-  }, 3000);
-</script>
+
