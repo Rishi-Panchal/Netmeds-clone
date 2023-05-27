@@ -713,13 +713,3 @@ h2 {
 }
 
 
-.stripe {
-  height: 500px;
-  width: 150vw;
-  top: 350px;
-  margin-left: -30vw;
-  position: absolute;
-  background-color: #4775de;
-  transform: rotate(6.2deg);
-  z-index: -1;
-}
