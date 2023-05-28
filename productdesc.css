@@ -159,5 +159,22 @@
     font-size: 13px;
     color: #6f7284;
 }
+#proer{
+    position: relative;
+}
+.popup{
+    position: fixed;
+    /* border: 3px solid crimson; */
+    width: 330px;
+    height: 100px;
+    top: 30%;
+    left: 43%;
+    background-color: rgb(56,175,178);
+    border-radius: 30px;
+    display: none;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
 
 

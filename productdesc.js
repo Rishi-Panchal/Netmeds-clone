@@ -138,9 +138,14 @@ function displayData(){
          var button=document.createElement("button");
          button.textContent="ADD TO CART";
          button.classList="addTocartpage"
-         button.addEventListener("click",()=>{
-            addToCartButton(ele);
-         })
+         button.addEventListener("click",function(){
+            if(check(ele.name)===false){
+                addToCartButton(ele)
+                popup()
+            }else{
+                hidepopup()
+            }
+        })
 
          var hr1=document.createElement("hr");
 
@@ -241,11 +246,41 @@ function displayData(){
     })
     
 }
+function check(name){
+    let checkCart=prior.filter(function(ele){
+        return name===ele.name;
+    })
+    if(checkCart.length>0){
+        return true;
+    }else{
+        return false;
+    }
+}
+function popup(){
+    setTimeout(()=>{
+        document.getElementById('propop').textContent='Item added to cart...'
+        document.querySelector('.popup').style.display='block'
+    },0)
+    setTimeout(()=>{
+        document.querySelector('.popup').style.display='none'
+    },4000)
+    
+}
+
+function hidepopup(){
+    setTimeout(()=>{
+        document.getElementById('propop').textContent='Item is already in cart...'
+        document.querySelector('.popup').style.display='block'
+    },0)
+    setTimeout(()=>{
+        document.querySelector('.popup').style.display='none'
+    },2000)
+}
 var addToCartarr=JSON.parse(localStorage.getItem("cart-product"))|| [];
 function addToCartButton(ele){
         addToCartarr.push(ele);
         localStorage.setItem("cart-product",JSON.stringify(addToCartarr))
-        alert("Item added to cart");
+       
 }
 var contentDiv=document.getElementById("button-info");
     document.getElementById("a").style.backgroundColor="white";
