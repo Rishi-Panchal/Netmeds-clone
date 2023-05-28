@@ -5,19 +5,23 @@
 body {
     margin: 0;
     background-color: #eef4fa;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #e9f1f8 50%, #FFFFFF 100%);
+
 }
 
 
 
 .body2 {
-    margin: 14px;
+    margin-left: 14px;
+    
 }
 #raw1 {
     padding: 14px 0 0 7px;
     display: flex;
     /* border: 1px solid; */
     justify-content: center;
-    gap: 45px;
+    gap: 32px;
     background-color: #32aeb1;
     align-items: center;
 }
@@ -54,9 +58,19 @@ body {
     width: 11%;
 }
 
+.line1 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+}
 /* ------------mega menu------------- */
 
-#raw2 {
+.nav {
+    margin-top: 75px;
     display: flex;
     background-color: #32aeb1;
     justify-content: center;
@@ -83,7 +97,16 @@ body {
     font-size: 15px;
     font-weight: 500;
 }
+/* -----------Header----------- */
 
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  /* Additional styling for your header */
+}
 
 /* -----------raw3------------- */
 
@@ -254,6 +277,10 @@ h2 {
   .menu-button-container {
     display: flex;
   }
+  #searchtab {
+    justify-content: center;
+    width: 180px;
+  }
   .menu {
     position: absolute;
     top: 0;
@@ -338,7 +365,7 @@ h2 {
   align-items: center;
   background-color: #ffffff;
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 12px;
   border-radius: 9px;
 }
 .raw4div i{
@@ -509,7 +536,7 @@ h2 {
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
   border-radius: 9px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding-bottom: 18px;
 
 }
@@ -569,7 +596,7 @@ justify-content: center;
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
   border-radius: 9px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 5px;
  }
  #raw8 p {
   font-weight:550;
@@ -599,7 +626,7 @@ justify-content: center;
   /* border: 1px solid; */
   background-color: #ffffff;
   border-radius: 9px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 5px;
  }
  #raw9 > div p{
   font-family: 'Lato', sans-serif;
@@ -638,7 +665,7 @@ justify-content: center;
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
   border-radius: 9px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 5px;
   padding-bottom: 79px;
  }
  #raw10 > div p{
@@ -693,7 +720,7 @@ justify-content: center;
     font-family: 'Lato', sans-serif;
     background-color: #ffffff;
     border-radius: 9px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-bottom: 18px;
 
  }
@@ -845,7 +872,7 @@ justify-content: center;
     font-family: 'Lato', sans-serif;
     background-color: #ffffff;
     border-radius: 9px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-bottom: 18px;
 
  }
@@ -909,7 +936,7 @@ justify-content: center;
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
   border-radius: 9px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding-bottom: 18px;
 
 }
@@ -972,7 +999,7 @@ justify-content: center;
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
   border-radius: 9px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding-bottom: 18px;
 
 }
@@ -1035,7 +1062,7 @@ justify-content: center;
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
   border-radius: 9px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding-bottom: 18px;
 
 }
@@ -1166,6 +1193,6 @@ justify-content: center;
   /* border: 1px solid; */
   /* padding-top: 63px; */
   width: 100%;
-  height: 490px;
+  height: 530px;
   background-image: linear-gradient(#ffffff, #a1dcdd);
 }
