@@ -105,6 +105,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 9999;
+  
   /* Additional styling for your header */
 }
 
@@ -272,67 +273,6 @@ h2 {
   transform: rotate(-45deg);
 }
 
-/* Making the navbar responsive by CSS Media Queries */
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex;
-  }
-  #searchtab {
-    justify-content: center;
-    width: 180px;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 125px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-  #menu-toggle:checked ~ .menu li {
-    /* border: 1px solid #9f9a9a; */
-    height: 2.5em;
-    padding: 0.5em;
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: black;
-    background-color: #32aeb1;
-    
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
- 
-  }
-  #pincode {
-    display: none;
-  }
-  #raw1 a {
-    display: none;
-  }
-  #logo1 {
-    display: none;
-  }
-  .btn-group {
-    display: none;
-  }
-  #searchtab {
-    size: 50%;
-  }
-}
-
 /* ---------raw4------------ */
 
 #raw4 {
@@ -365,6 +305,10 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 12px;
   border-radius: 9px;
 }
+.raw4div:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.27 ) 0px 3px 12px;
+} 
 .raw4div i{
   padding-left: 194px;
   color: #9fa2a4;
@@ -403,6 +347,9 @@ h2 {
   font-family: 'Lato', sans-serif;
   /* border: 1px solid; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+}
+#raw5inside :hover {
+  cursor: pointer;
 }
 #raw5inside img {
   width: 13%;
@@ -466,7 +413,12 @@ h2 {
   /* border: 1px solid; */
   border-radius: 9px;
   background-color:#ffffff;
+  box-shadow: rgba(0, 0, 0, 0.09 ) 0px 3px 12px;
   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;     */
+ }
+ .raw7class :hover {
+  cursor: pointer;
+  
  }
  #raw7 img {
   width: 7%;
@@ -580,9 +532,12 @@ justify-content: center;
   gap: 18px;
   /* justify-content: space-between; */
  }
- #raw8 > div {
+ 
+ #raw8 div {
   text-align: center;
+  
  }
+ 
  #raw8 img {
   width: 100%;
  }
@@ -595,8 +550,14 @@ justify-content: center;
   border-radius: 9px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 5px;
  }
+ #raw8 > div :hover {
+  cursor: pointer;
+  
+ }
  #raw8 p {
   font-weight:550;
+  text-decoration: none;
+
  }
 
  /* -------------raw9------------ */
@@ -965,6 +926,8 @@ cursor: pointer;
 .raw13class img {
 padding-bottom: 5px;
 justify-content: center;
+/* height: 170px; 
+width: 170px; */
 }
 
 /* ---------------------------------- */
@@ -1192,4 +1155,210 @@ justify-content: center;
   width: 100%;
   height: 530px;
   background-image: linear-gradient(#ffffff, #a1dcdd);
+}
+
+
+
+/* Making the navbar responsive by CSS Media Queries */
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  #searchtab {
+    justify-content: center;
+    width: 200px;
+  }
+  .sticky-header {
+    padding-bottom: 90px;
+  }
+  .raw4div {
+    display: none;
+  }
+  .container5Inside
+  .btn-group {
+    display: none;
+  }
+  .container5Inside {
+    /* border: 1px solid; */
+    margin-left: -63px;
+    padding-left: -45px;
+    padding-left: -45px;
+    
+  }
+  .container4Inside {
+    margin-left: -63px;
+    padding-left: -45px;
+    padding-left: -45px;
+  }
+  .raw15class {
+    padding-left: -45px;
+    padding-right:45px ;
+  }
+  .raw14class {
+    padding-left: -45px;
+    padding-right:45px ;
+  }
+  .container3Inside {
+    margin-left: -63px;
+    padding-left: -45px;
+    padding-left: -45px;
+    padding-bottom: 90px;
+    display: block;
+  }
+  .raw13class {
+    padding-left: -45px;
+    padding-right:45px ;
+  }
+  .container0Inside {
+    margin-left: -63px;
+    padding-left: -45px;
+    padding-left: -45px;
+    padding-bottom: 90px;
+    display: block;
+  }
+  .container0Class {
+    padding-left: -45px;
+    padding-right:45px ;
+  }
+  
+  #raw5 {
+    display: none;
+  }
+  #raw6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #raw7 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #raw8 {
+    display: none;
+  }
+  #raw9 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #raw10 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #raw11block {
+    display: none;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 125px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  #menu-toggle:checked ~ .menu li {
+    /* border: 1px solid #9f9a9a; */
+    height: 2.5em;
+    padding: 0.5em;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: black;
+    background-color: #32aeb1;
+    
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+ 
+  }
+  #pincode {
+    display: none;
+  }
+  #raw1 a {
+    display: none;
+  }
+  #logo1 {
+    display: none;
+  }
+  .btn-group {
+    display: none;
+  }
+  #searchtab {
+
+    size: 50%;
+  }
+  #insideRaw1 {
+    display: flex;
+    padding: 9px;
+    
+    /* border: 1px solid; */
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    border-radius: 6px;
+  }
+  #raw1 {
+    padding-left: 63px;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content:flex-start;
+    background-color: #32aeb1;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  #body {
+    margin: 0;
+  }
+  .body2 {
+   margin-top: 27px;
+}
+  #Lgradient {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 63px;
+  /* border: 1px solid; */
+  /* padding-top: 63px; */
+  width: 100%;
+  height: 1500px;
+  background-image: linear-gradient(#ffffff, #a1dcdd);
+}
+  #footer_links {
+    display: grid;
+  /* grid-template-columns: repeat(6,1fr); */
+  margin: auto;
+  gap: 50px;
+  margin-left: 20px;
+  margin-right: 200px;
+  padding-bottom: 45px  ;
+  /* border: 1px solid; */
+  justify-content: space-between;
+  }
+  #logo {
+    width: 23%;
+    padding-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 20px;
+    gap: 27px;
+  }
+  #footerupper {
+    display: none;
+  }
+  #end {
+    display: none;
+  }
+  #lastline {
+    display: none;
+  }
 }

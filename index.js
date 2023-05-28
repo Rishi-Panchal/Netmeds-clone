@@ -15,10 +15,9 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-    },
-  
+  },
 
-  });
+});
 
 
 var swiper1 = new Swiper(".swiper-container", {
@@ -79,7 +78,7 @@ var swiper3 = new Swiper(".mySwiper2", {
   },
   breakpoints: {
     500: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     868: {
