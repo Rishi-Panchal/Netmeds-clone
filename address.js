@@ -87,6 +87,12 @@ function funpan(){
     var address=document.getElementById("address").value;
     var phone=document.getElementById("phone").value;
 
+	// User Pressed Yes, Do submission //this.submitForm(...);
+    
+     if(pincode==""||city==""||state==""||namefirst==""||namelast==""||address==""||phone==""){
+        alert("plzz enter all details")
+        return;
+     }
     var obj={
         pincode:pincode,
         city:city,

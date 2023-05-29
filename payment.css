@@ -64,7 +64,7 @@
 }
 #payment-3>div{
     /* border: 3px solid blue; */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 20px;
     border-radius: 10px;
@@ -94,13 +94,16 @@
 }
 #div2pay{
     /* border: 2px solid red; */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 20px;
     border-radius: 10px;
 }
 #div2pay>div{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+#div2pay>div>div{
+    margin-top: 20px;
 }
 #div2pay>div>div{
     display: flex;
@@ -397,8 +400,8 @@ input[type="text"]{
   }
 #paytmpaym{
     /* border: 3px solid green; */
-    margin-bottom: 30px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -413,15 +416,16 @@ input[type="text"]{
 }
   
 #payment-4{
-    margin-bottom: 20px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px;
     border-radius: 10px;
 }
 #payment-4>div>div>div{
     display: flex;
     /* border: 1px solid black; */
-    
+    gap: 10px;
+    margin-top: 20px;
     align-items: center;
 }
 #payment-4>div>div{
@@ -443,7 +447,7 @@ input[type="text"]{
     
 }
 #payment-4>div>div>div>img{
-    width: 100px;
+    width: 120px;
     height: 50px;
 }
 #btnofpaytm>button{
