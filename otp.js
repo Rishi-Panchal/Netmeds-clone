@@ -2,7 +2,21 @@
 var val = Math.floor(1000 + Math.random() * 9000);
 console.log(val);
 
-alert(`Your 4 Digit OTP is "${val}"`)
+// alert(`Your 4 Digit OTP is "${val}"`)
+otp()
+function otp(){
+    document.getElementById('otp').textContent=`Your 4 Digit OTP is ${val}`
+    document.getElementById('otppopup').style.display='block'
+    setTimeout(()=>{
+        document.getElementById('otppopup').style.display='none'
+    }, 4000)
+
+}
+// function hideOTP(){
+//     document.getElementById('otppopup').style.display='none';
+// }
+
+
 
 var userNum=JSON.parse(localStorage.getItem("user-number"));
 // document.getElementById("number_or").textContent="+91 "+ userNum;
@@ -86,8 +100,13 @@ function formS(event){
         document.querySelector(".success").textContent=""
         localStorage.setItem("status",false)
         localStorage.setItem("login-data","")
-        alert(`Invalid...!, Your 4 Digit OTP is "${val}"`)
-        return
+        // alert(`Invalid...!, Your 4 Digit OTP is "${val}"`)
+        document.getElementById('otp').textContent=`Invalid...!, Your 4 Digit OTP is ${val}`
+        document.getElementById('otppopup').style.display='block'
+        setTimeout(()=>{
+        document.getElementById('otppopup').style.display='none'
+    }, 4000)
+return
     }else{
        let verify = localStorage.getItem("user-number")
        localStorage.setItem("login-data",verify)

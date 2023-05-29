@@ -1,6 +1,42 @@
 *{
     padding: 0;
     margin: 0;
+    
+  }
+  body{
+    background-color: rgb(255,255,255);;
+  }
+
+  #pankajotp{
+    position: relative;
+    
+  }
+  #otp{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  #otppopup{
+    position:fixed;
+    width: 350px;
+    top: 11%;
+    left: 41.5%;
+    /* border: 3px solid crimson; */
+    border-radius: 8px;
+    background-color: rgb(25,33,50);
+    display: none;
+    margin: auto;
+    text-align: center;
+  }
+  #hideotp{
+     width: 50px;
+    /* height: 30px; */
+    padding: 8px;
+    background-color: rgb(31,128,224);
+    color: white;
+    
   }
   #btn{
     margin: 20px;

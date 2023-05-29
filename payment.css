@@ -14,7 +14,9 @@
 
 
 
-
+#paymentdiv{
+    background-color: rgb(243,244,246);
+}
 
 
 
@@ -22,7 +24,7 @@
 
 
 #paymentImg{
-    width: 80%;
+    width: 82%;
     margin: auto;
     
 }
@@ -34,7 +36,7 @@
     border-bottom-right-radius: 10px;
 }
 #div1pay{
-    width: 80%;
+    width: 70%;
     /* border: 1px solid black; */
     margin-bottom: 20px;
     padding: 20px;
@@ -65,9 +67,10 @@
 #payment-3>div{
     /* border: 3px solid blue; */
     margin-bottom: 50px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid rgb(56,175,178);
 }
 #buttonofpay{
     
@@ -95,9 +98,10 @@
 #div2pay{
     /* border: 2px solid red; */
     margin-bottom: 50px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid rgb(56,175,178);
 }
 #div2pay>div{
     margin-bottom: 30px;
@@ -380,7 +384,7 @@ input[type="text"]{
     height: 50vh;
     width: 750px;
     top: 20%;
-    left: 30%;
+    left: 25%;
     padding: 10px;
     display: none;
     background-color: #fff;
@@ -401,9 +405,10 @@ input[type="text"]{
 #paytmpaym{
     /* border: 3px solid green; */
     margin-bottom: 40px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid rgb(56,175,178);
 }
 #paytmpaym>div{
     display: flex;
@@ -417,9 +422,10 @@ input[type="text"]{
   
 #payment-4{
     margin-bottom: 40px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid rgb(56,175,178);
 }
 #payment-4>div>div>div{
     display: flex;
@@ -466,13 +472,14 @@ input[type="text"]{
 }
 #paymentImgdiv1{
     margin-top: 20px;
-    width: 20%;
+    width: 30%;
     /* border: 2px solid red; */
-    padding: 20px 20px 20px 20px;
+    padding: 30px;
     /* position: relative; */
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     height: 45vh;
     border-radius: 10px;
+    border: 1px solid rgb(56,175,178);
 }
 #paymentImgdiv1>div{
     margin-top: 10px;
@@ -537,6 +544,16 @@ input[type="text"]{
     background-color:rgb(56,175,178) ;
     width: 40px;
      padding: 5px;
+}
+#paymentImgdiv1 h3{
+    font-weight: 500;
+}
+#paymentImgdiv1>p{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgb(56,175,178);
+  
 }
 
 

@@ -59,9 +59,9 @@ function displayfun(){
         total+=ele.price;
          totalmrp=document.getElementById('totalmrp').textContent="Rs. "+total;
         localStorage.setItem("totalprice",JSON.stringify(totalmrp));
-        var pankajdis=126
+        var pankajdis=130
         var discountadditional=document.getElementById("adiscount").textContent="Rs. "+pankajdis;
-         var totalpayment=total+pankajdis;
+         var totalpayment=total-pankajdis;
         document.getElementById("totalamount").textContent="Rs. "+ totalpayment;
 
         totalpayableam=document.getElementById("payabletotal").textContent="Rs. "+ totalpayment;
@@ -88,9 +88,19 @@ function funpan(){
     var phone=document.getElementById("phone").value;
 
 	// User Pressed Yes, Do submission //this.submitForm(...);
+    function popalert(){
+    document.getElementById('addme').textContent=`Please Fill all the Details`
+    document.getElementById('addpsb').style.display='block';
+    }
+    document.getElementById("okmebye").addEventListener("click",()=>{
+        plzzcloseit();
+    })
+    function plzzcloseit(){
+       document.getElementById('addpsb').style.display='none';
+    }
     
      if(pincode==""||city==""||state==""||namefirst==""||namelast==""||address==""||phone==""){
-        alert("plzz enter all details")
+        popalert()
         return;
      }
     var obj={

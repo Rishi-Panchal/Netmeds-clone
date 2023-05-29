@@ -20,8 +20,11 @@ const swiper = new Swiper('.swiper', {
 
   });
 
+
+
 var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
   displayCartprod()
+  console.log(cart.length);
   function displayCartprod(){
     document.getElementById('dataappenddiv').textContent="";
     cart.map((ele,idx)=>{
