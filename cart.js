@@ -20,8 +20,11 @@ const swiper = new Swiper('.swiper', {
 
   });
 
+
+
 var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
   displayCartprod()
+  console.log(cart.length);
   function displayCartprod(){
     document.getElementById('dataappenddiv').textContent="";
     cart.map((ele,idx)=>{
@@ -197,8 +200,16 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
             var temp = document.createElement("p");
             temp.setAttribute("class","hurry");
             temp.style.color="white";
+            temp.style.marginBottom="20px"
             temp = "Hurray!... You got 30% off";
-            document.querySelector('.hurrypopup').append(temp)
+            var btn=document.createElement("button");
+            btn.textContent="OK";
+            btn.id="okhurry";
+            btn.addEventListener("click",()=>{
+             okHurryClose()
+            })
+            document.querySelector('.hurrypopup').append(temp,btn)
+            
             document.querySelector('.hurrypopup').style.display="block";
             var t = parseInt(document.getElementById("total").textContent);
             var change = (t*3)/10;
@@ -215,7 +226,7 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
 
 
 
-
+      
     function okHurryClose(){
       document.querySelector('.hurrypopup').style.display='none'
     }

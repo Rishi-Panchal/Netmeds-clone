@@ -51,6 +51,7 @@ function displayData(){
 
         var span=document.createElement("span");
         span.textContent="5.0"
+        span.style.fontWeight="bold";
 
         var imagerate=document.createElement("img");
         imagerate.setAttribute("src","sale_1_05.jpg");
