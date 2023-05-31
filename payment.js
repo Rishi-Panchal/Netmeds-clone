@@ -1,6 +1,7 @@
 var pay=localStorage.getItem("payablemoney");
 function showbutton(){
     document.getElementById("radio").style.display="none"
+    // document.getElementById("radio").style.cursor="pointer"
     var btn=document.createElement("button");
     btn.addEventListener("click",()=>{
         redirectTootp();
@@ -132,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ////phone pay
     function showpaytm(){
         document.getElementById("rdio").style.display="none"
+        // document.getElementById("rdio").style.cursor="pointer"
         var btn=document.createElement("button");
         btn.addEventListener("click",()=>{
             redirecttopage();

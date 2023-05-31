@@ -15,24 +15,27 @@ border-bottom-left-radius: 15px;
 border-bottom-right-radius: 15px;
 }
 #divdisplay{
-    width: 80%;
+    width: 70%;
     /* border: 2px solid crimson; */
 }
 /* #divdisplay>div{
     
 } */
-#divdisplayright>div>p{
+/* #divdisplayright>div>p{
     font-weight: bold;
-}
+} */
 #divdisplayright{
-    width: 20%;
+    width: 25%;
+    border: 1px solid rgb(36,174,177);
     
     border-radius: 15px;
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
 #payabletotal{
     color:  rgb(36,174,177);
+    text-decoration: underline;
+    font-weight: bold;
 }
 #divdisplayright div{
  display: flex;
@@ -43,10 +46,11 @@ border-bottom-right-radius: 15px;
 
 }
 #formappend{
-    width: 76%;
+    width: 68%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    /* border: 1px solid rgb(36,174,177); */
 
 }
 #formappend>div>button{
@@ -58,7 +62,7 @@ border-bottom-right-radius: 15px;
     background-color:rgb(36,174,177); 
 }
 #formappend{
-    font-weight: bold;
+    font-weight: 800;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
     padding: 20px;
     border-radius: 10px;
@@ -114,6 +118,11 @@ section{
     border-radius: 8px;
     font-size: 20px;
 }
+#divdisplayright >a{
+    display: block;
+    text-align: center;
+    /* margin: auto */
+}
 
 #divdisplayright >a>button{
     color: white;
@@ -121,6 +130,7 @@ section{
     padding: 10px 6px;
     margin: 0px 0px 0px 4px;
     font-size: 14px;
+    /* justify-content: center; */
     text-align: center;
     margin: auto;
     width: 120px;
@@ -161,9 +171,11 @@ section{
     gap: 30px;
 }
 #divqwer{
-    width: 76%;
+    width: 70%;
     /* border: 2px solid green; */
     margin-bottom: 20px;
+    border: 1px solid rgb(36,174,177);
+    border-radius: 10px;
    
 }
 #divqwer>div{
@@ -178,6 +190,7 @@ section{
   text-decoration: underline;
   font-size: 20px;
 }
+
 /* .overlay{
     width: 100%;
     position: fixed;
@@ -262,4 +275,13 @@ section{
    border: none;
    border-radius: 5px;
    
+ }
+ #divdisplayright>div>h3{
+    font-weight: 500;
+ }
+ #divdisplayright>p{
+    font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgb(56,175,178);
  }

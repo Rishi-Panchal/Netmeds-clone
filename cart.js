@@ -23,6 +23,20 @@ const swiper = new Swiper('.swiper', {
 
 
 var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
+if(cart.length==0){
+  var divw=document.createElement("div");
+  var img=document.createElement("img");
+  img.src="cartempty.png";
+  img.style.width="100%"
+  var btn2=document.createElement("button");
+  btn2.textContent="ADD PRODUCTS";
+  btn2.style.margin="auto";
+  btn2.addEventListener("click",function addsomething(){
+     window.location.href="./product.html";
+  })
+  divw.append(img,btn2);
+ document.getElementById("cartpage").append(divw)
+}else{
   displayCartprod()
   console.log(cart.length);
   function displayCartprod(){
@@ -223,7 +237,7 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
     document.getElementById("proicediv").textContent= t - change;
         }
     }
-
+  }
 
 
       
