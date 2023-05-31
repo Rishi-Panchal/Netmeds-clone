@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adress</title>
+    <link rel="stylesheet" href="adress.css">
+    
+</head>
+<body>
+    <div id="mainInvert" >
+        <!-- <div class="overlay"onclick="closemodal()"></div> -->
+        <section>
+        <div class="loginform">
+            
+            <span onclick="closemodal()"><ion-icon name="close-outline" id="close"></ion-icon></span>
+            <form action="">
+                <div>
+                    
+                <input type="number" placeholder="Pincode" id="pincode" >
+                
+                </div>
+                <div>
+                    
+                    <input type="text" placeholder="City " id="city">
+                    
+                </div>
+                <div>
+                    
+                    <input type="text" placeholder="State" id="state">
+                </div>
+                <div>
+                    <label for="namef">FIRST NAME:- </label>
+                    <input type="text"placeholder="First name" id="namefirst">
+                    
+                </div>
+                <div>
+                    <label for="namelast">LAST NAME:- </label>
+                    <input type="text" placeholder="Last name" id="namelast">
+                </div>
+                <div>
+                    
+                    <input type="text"placeholder="Address" id="address">
+                </div>
+                <div>
+                    <label for="phone">PHONE NUMBER:-</label>
+                    <input type="number" placeholder="Phone number" id="phone">
+                </div>
+                <button >Save Address</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="photoImage">
+     <img src="adresspage.png" alt="">
+    </div>
+    <h2>Product</h2>
+    <div id="perseverance">
+        <div id="divdisplay">
+
+        </div>
+        <div id="divdisplayright">
+         <p>PAYMENT DETAILS</p>
+         <div>
+            <h3 >MRP Total </h3>
+            <p id="totalmrp">0</p>
+         </div>
+         <div>
+            <h3 >Additional Discount</h3>
+            <p id="adiscount">0</p>
+         </div>
+         <div>
+            <h3 >Total Amount</h3>
+            <p id="totalamount">0</p>
+         </div>
+         <div>
+            <h3 >Shipping Charges</h3>
+            <p id="shipc">Rs. 0.00</p>
+         </div>
+         <div>
+            <h3 style="color: rgb(36,174,177);">Total Payable</h3>
+            <p  id="payabletotal" >0</p>
+         </div>
+         <div>
+            <h3 >Total Savings</h3>
+            <p id="totalsave">0</p>
+         </div>
+
+         
+            <a href="payment.html"><button id="pay">PAY</button></a>
+         
+        </div>
+        
+    </div>
+    <div id="divqwer">
+      <div>
+        <h2 style="font-size: 20px;">DELIVERY ADDRESS</h2>
+        <h2 class="btn-adress" onclick="showmodal()">SELECT ADDRESS</h2>
+      </div>
+      
+        
+      </div>
+      <div id="formappend">
+
+      </div>
+      </div>
+      <main id="addmefast">
+        <div id="addpsb">
+            <p id="addme"></p>
+            <button id="okmebye" >Ok</button>
+        </div>
+    </main>
+
+</body>
+<script src="address.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

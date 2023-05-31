@@ -295,8 +295,15 @@ function displayData(){
 
         var cart=document.createElement("button");
         cart.textContent="ADD TO CART";
-        cart.addEventListener("click",()=>{
-            addTocart(ele);
+        cart.addEventListener("click",function(){
+            if(check(ele.name)===false){
+                addTocart(ele)
+                popup()
+
+            }else{
+                hidepopup()
+                
+            }
         })
         addtocart.appendChild(cart);
         div.append(image,divname,divbtn,p,price,strikedprice);
@@ -307,6 +314,41 @@ function displayData(){
 
     })
 }
+
+function popup(){
+    setTimeout(()=>{
+        document.getElementById('productpop').textContent='Item added to cart...'
+        document.querySelector('.propopup').style.display='block'
+    },0)
+    setTimeout(()=>{
+        document.querySelector('.propopup').style.display='none'
+    },4000)
+    
+}
+
+function hidepopup(){
+    setTimeout(()=>{
+        document.getElementById('productpop').textContent='Item is already in cart...'
+        document.querySelector('.propopup').style.display='block'
+    },0)
+    setTimeout(()=>{
+        document.querySelector('.propopup').style.display='none'
+    },2000)
+}
+
+
+
+function check(name){
+    let checkCart=prior.filter(function(ele){
+        return name===ele.name;
+    })
+    if(checkCart.length>0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 var descItem=[];
         function nextPage(ele){
             descItem.push(ele);

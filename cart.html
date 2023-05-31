@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartpage</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="cart.css">
+    
+</head>
+<body>
+    <div id="cartdetails">
+    <div id="cartpage">
+     <div id="silderpng1">
+        <div class="container">
+            <!--Show Slideshow here-->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                <img style="width:100%" src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870829_cartbannershjjj.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1682870861_fdsbdsbbcartbanners.jpg" alt="">
+                </div>
+    
+                
+               
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+            </div>
+          </div>
+        <br>
+      </div>
+        <div id="detailscart">
+         <h2>Products</h2>
+         <div id="dataappenddiv">
+            
+         </div>
+        </div>
+        <section id="shubham">
+          <div class="hurrypopup">
+            <!-- <button id="okhurry" onclick="okHurryClose()">Ok</button> -->
+          </div>
+        </section>
+     </div>
+    
+    <div id="totalcart">
+      <div id="promocode">
+        <div>
+          <input type="radio" id="radeo" onclick="funper()">
+          <p id="apllyp">Apply Promocode</p>
+        </div>
+        <div id="Apply">
+
+        </div>
+      </div>
+      <p>PAYMENT DETAILS</p>
+      <div id="divdisplaypr">
+        
+        <div>
+           <h3 >MRP Total </h3>
+           <p>₹<span id="total"> 0</span></p>
+        </div>
+        <div>
+           <h3 >Discount</h3>
+           <p >- ₹<span id="adi">0</span></p>
+        </div>
+        <div>
+           <h3 >Total Amount</h3>
+           <p >₹ <span id="tota">0</span></p>
+        </div>
+        <div>
+           <h3 >Shipping Charges</h3>
+           <p >₹ <span id="shipcount">0</span></p>
+        </div>
+        <div>
+           <h3 style="color: rgb(36,174,177);">Total Payable</h3>
+           <p   >₹ <span id="payabl">0</span></p>
+        </div>
+        <div>
+           <h3 >Total Savings</h3>
+           <p >₹ <span id="save">0</span></p>
+        </div>
+        <div>
+          <div>
+            <p>Total Payable</p>
+            <h2 >₹<span id="proicediv">0</span></h2>
+          </div>
+        <button id="nextbutton">PROCEED</button>
+      </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="cart.js"></script>
