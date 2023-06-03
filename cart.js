@@ -23,6 +23,8 @@ const swiper = new Swiper('.swiper', {
 
 
 var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
+
+
 if(cart.length==0){
   var divw=document.createElement("div");
   var img=document.createElement("img");
@@ -93,7 +95,8 @@ if(cart.length==0){
         var span=document.createElement("span");
         span.textContent=""+"1";
 
-       
+        document.getElementById("inccount").textContent=cart.length;
+
 
       var increase=document.createElement("button");
       increase.setAttribute("id","btn")

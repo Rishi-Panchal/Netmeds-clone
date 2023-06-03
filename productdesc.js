@@ -26,6 +26,8 @@ function displayData(){
 
         divImage.append(img1,img2,img3,img4,img5);
 
+        
+
         var divDetails=document.createElement("div");
         divDetails.setAttribute("id","details");
 
@@ -278,9 +280,11 @@ function hidepopup(){
     },2000)
 }
 var addToCartarr=JSON.parse(localStorage.getItem("cart-product"))|| [];
+document.getElementById("increaseCount").textContent=addToCartarr.length;
 function addToCartButton(ele){
         addToCartarr.push(ele);
         localStorage.setItem("cart-product",JSON.stringify(addToCartarr))
+        
        
 }
 var contentDiv=document.getElementById("button-info");

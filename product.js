@@ -289,6 +289,7 @@ function displayData(){
         strikedprice.style.color="rgb(139,167,201)"
         
         strikedprice.appendChild(span1); 
+        
 
         var addtocart=document.createElement("div");
         addtocart.classList="btnadd"
@@ -356,9 +357,11 @@ var descItem=[];
              window.location.href="productdesc.html"
 }
 var prior=JSON.parse(localStorage.getItem("cart-product"))|| [];
+document.getElementById("increaseCount").textContent=prior.length
 function addTocart(ele){
     prior.push(ele);
     localStorage.setItem("cart-product",JSON.stringify(prior));
+    
     displayData();
 }
 

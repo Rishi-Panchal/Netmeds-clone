@@ -1,4 +1,132 @@
-
+#raw1 {
+    padding: 14px 0 0 7px;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    gap: 32px;
+    background-color: #32aeb1;
+    align-items: center;
+  }
+  #raw1 a {
+    text-decoration: none;
+    font-size: 15px;
+    word-spacing: 1.4px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+  #raw1 > img {
+    width: 100%;
+    margin-left: -100px;
+  }
+  #insideRaw1 {
+    display: flex;
+    padding: 14px;
+    /* border: 1px solid; */
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    border-radius: 6px;
+  }
+  #pincode {
+    border: none;
+    width: 150px;
+    /* border: 1px solid; */
+  }
+  #searchtab {
+    border: none;
+    width: 399px;
+  }
+  
+  #logo1 {
+    width: 11%;
+  }
+  
+  .line1 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  
+  }
+  /* ------------mega menu------------- */
+  
+  .nav {
+    margin-top: 75px;
+   
+    background-color: #32aeb1;
+    justify-content: center;
+    gap: 90px;
+    /* border: 1px solid; */
+  
+  }
+  .menu {
+    display: flex;
+    /* grid-template-columns: repeat(5,1fr); */
+    gap: 90px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu li {
+    color: #32aeb1;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .navbar > i {
+    color: #d3f1ea;
+  }
+  .navbar p {
+    color: #d3f1ea;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  /* -----------Header----------- */
+  
+  .sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  
+  /* Additional styling for your header */
+  }
+  
+  /* -----------raw3------------- */
+  
+  .btn-group {
+  display: flex;
+  padding-top: 14px;
+  padding-left: 15%;
+  padding-bottom: 18px;
+  margin-bottom: 27px;
+  margin-top: -14px;
+  gap: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  background-color: #ffffff;
+  }
+  
+  .btn-group a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  gap: 15px;
+  text-decoration: none;
+  color: #333333;
+  border: none;
+  background-color: #ffffff;
+  }
+  .btn-group > button :hover {
+  cursor: pointer;
+  }
 
 
 
@@ -133,10 +261,10 @@
     background-color: rgb(255,255,255);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-*{
+/* *{
     padding:0;
     margin:0;
-}
+} */
 .container{
     
     display:flex;
@@ -484,7 +612,7 @@ input[type="text"]{
     padding: 30px;
     /* position: relative; */
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    height: 45vh;
+    height: 70vh;
     border-radius: 10px;
     border: 1px solid rgb(56,175,178);
 }
@@ -492,7 +620,7 @@ input[type="text"]{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     
 }
 #pankajbtn{
@@ -509,18 +637,22 @@ input[type="text"]{
 #shubhamC{
     position: fixed;
     width: 300px;
-    height: 100vh;
+    height: 50vh;
     /* border: 3px solid crimson; */
-    background-color: white;
-    right: 0;
-    top: 0;
+    background-color: rgb(78, 77, 77);
+   
+     top: 20%;
+     left: 40%;
     display: none;
-    
+    border: 1px solid rgb(56,175,178);
+    border-radius: 5px;
+    color: white;
 }
 
 
 #shubhamC>#power>div>#psbe{
     display: flex;
+    gap: 10px;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -541,6 +673,7 @@ input[type="text"]{
     text-align: center;
     margin: auto;
     cursor: pointer;
+    margin-top: -15px;
 }
 #shubhamC>#power>div>#psbe+div{
     margin-bottom: 20px;
@@ -611,6 +744,116 @@ input[type="text"]{
         margin: auto;
     }
 }
-
+#fullcolor{
+    background-image: linear-gradient(to bottom,rgba(36,174,177,0) 50%,rgba(36,174,177,.7) 130%),linear-gradient(to bottom,#fff,#fff);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; 
+    
+  }
+  #pankajfoot{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    /* height: 55vh; */
+    background-image: linear-gradient(to bottom,rgba(36,174,177,0) 50%,rgba(36,174,177,.7) 130%),linear-gradient(to bottom,#fff,#fff);
+  }
+  #footwe{
+    width: 80%;
+    /* margin: auto; */
+  }
+  #footwe>div{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* margin-bottom: 20px; */
+  }
+  #footwe>div>p{
+   width: 58%;
+   /* margin-bottom: 20px; */
+  }
+  #content-foot{
+    display: flex;
+    gap: 20px;
+  }
+  #imgdivme{
+    display: flex;
+  }
+  #imgdivme>img{
+    width: 120px;
+    height: 40px;
+  }
+  #content-foot>div{
+  width: 30%;
+  margin-bottom: 20px;
+  }
+  #content-foot>div h4{
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+    /* width: 210px; */
+  }
+  #content-foot>div p{
+    
+    margin-bottom: 10px;
+   }
+  #content-foot>div>div{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  #content-foot>div>div>input{
+    height: 30px;
+    border: none;
+    background-color: rgb(255,255,255);
+  }
+  #content-foot>div>div>button{
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  background-color: rgb(243,244,246);
+  }
+  @media screen and (max-width:1024px) {
+    #footwe>div{
+    display: flex;
+    gap: 40px;
+  }
+  #footwe>div>p{
+   width: 58%;
+  }
+  #content-foot{
+    display: flex;
+    gap: 20px;
+  }
+  #imgdivme{
+    display: flex;
+  }
+  #content-foot>div>div{
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-direction: column; */
+  }
+  }
+  @media screen and (min-width:0px) and (max-width:1023px){
+    #footwe>div{
+    display: flex;
+    flex-direction: column;
+  }
+  /* #footwe>div>p{
+   width: 58%;
+  } */
+  #content-foot{
+    display: flex;
+    flex-direction: column;
+  }
+  #content-foot>div>div{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+  }
+  }
 
 
