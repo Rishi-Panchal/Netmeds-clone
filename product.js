@@ -13,6 +13,7 @@ function slide3(){
 setInterval(slide1,2000);
 setInterval(slide2,4000);
 setInterval(slide3,6000);
+setInterval(slide1,8000)
 
 var arr=[
     {
@@ -289,6 +290,7 @@ function displayData(){
         strikedprice.style.color="rgb(139,167,201)"
         
         strikedprice.appendChild(span1); 
+        
 
         var addtocart=document.createElement("div");
         addtocart.classList="btnadd"
@@ -356,9 +358,11 @@ var descItem=[];
              window.location.href="productdesc.html"
 }
 var prior=JSON.parse(localStorage.getItem("cart-product"))|| [];
+document.getElementById("cartcount").textContent=prior.length
 function addTocart(ele){
     prior.push(ele);
     localStorage.setItem("cart-product",JSON.stringify(prior));
+    document.getElementById("cartcount").textContent=prior.length
     displayData();
 }
 

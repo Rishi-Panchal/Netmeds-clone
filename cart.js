@@ -23,6 +23,22 @@ const swiper = new Swiper('.swiper', {
 
 
 var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
+
+
+if(cart.length==0){
+  var divw=document.createElement("div");
+  var img=document.createElement("img");
+  img.src="cartempty.png";
+  img.style.width="100%"
+  var btn2=document.createElement("button");
+  btn2.textContent="ADD PRODUCTS";
+  btn2.style.margin="auto";
+  btn2.addEventListener("click",function addsomething(){
+     window.location.href="./product.html";
+  })
+  divw.append(img,btn2);
+ document.getElementById("cartpage").append(divw)
+}else{
   displayCartprod()
   console.log(cart.length);
   function displayCartprod(){
@@ -57,7 +73,7 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
         mrp.textContent="₹"+ele.mrp;
 
         var  p=document.createElement("p");
-        p.textContent="Delivery between MAY 30-MAY 31"
+        p.textContent="Delivery between JUNE 06-JUNE 07"
 
         divDetailsCart.append(name,mfr,price,mrp,p);
 
@@ -79,7 +95,8 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
         var span=document.createElement("span");
         span.textContent=""+"1";
 
-       
+        document.getElementById("inccount").textContent=cart.length;
+
 
       var increase=document.createElement("button");
       increase.setAttribute("id","btn")
@@ -96,7 +113,7 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
              mrp.textContent="₹"+ver;
              var a= document.getElementById("total").textContent;
             var last=Number(a)+Number(ele.price);
-            var dis=130;
+            var dis=130
             document.getElementById("total").textContent=(last);
             document.getElementById("adi").textContent=dis;
     var totalAmountof=parseInt(last)-Number(dis)
@@ -163,7 +180,7 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
  
   function totalprice(){
     var total=0;
-    var dis=130
+    var dis=130;
     for(var i=0;i<cart.length;i++){
       total+=parseInt(cart[i].price);
     }
@@ -218,12 +235,13 @@ var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
 
     
     document.getElementById("tota").textContent= t - change;
-    document.getElementById("payabl").textContent= t - change;
+    var pkj= document.getElementById("payabl").textContent= t - change;
+    localStorage.setItem("totalpsb",JSON.stringify(pkj))
     
     document.getElementById("proicediv").textContent= t - change;
         }
     }
-
+  }
 
 
       

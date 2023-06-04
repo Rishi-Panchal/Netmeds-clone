@@ -26,6 +26,8 @@ function displayData(){
 
         divImage.append(img1,img2,img3,img4,img5);
 
+        
+
         var divDetails=document.createElement("div");
         divDetails.setAttribute("id","details");
 
@@ -278,9 +280,11 @@ function hidepopup(){
     },2000)
 }
 var addToCartarr=JSON.parse(localStorage.getItem("cart-product"))|| [];
+document.getElementById("increaseCount").textContent=addToCartarr.length;
 function addToCartButton(ele){
         addToCartarr.push(ele);
         localStorage.setItem("cart-product",JSON.stringify(addToCartarr))
+        
        
 }
 var contentDiv=document.getElementById("button-info");
@@ -292,16 +296,16 @@ var contentDiv=document.getElementById("button-info");
     //     document.getElementById("e").style.backgroundColor="";
     var contentdiv1=document.createElement("div");
         contentdiv1.style.display="flex";
-        contentdiv1.style.gap="7px"
+        contentdiv1.style.gap="4px"
         contentdiv1.style.marginBottom="-10px"
 
         
         var span=document.createElement("p");
-        span.textContent="Dettol Antiseptic Liquid";
+        span.textContent="";
         
         
         var description1=document.createElement("p");
-        description1.textContent="provides protection to you and your family against illness-causing germs and comes in a fresh pine fragrance. The topical antiseptic liquid sanitizes your home and helps maintain your personal hygiene."
+        description1.textContent="Dettol Antiseptic Liquid provides protection to you and your family against illness-causing germs and comes in a fresh pine fragrance. The topical antiseptic liquid sanitizes your home and helps maintain your personal hygiene."
   
         var description2=document.createElement('p');
         description2.textContent="The Dettol first aid antiseptic liquid can be used to protect against infection from cuts and scratches, disinfect toys, and sanitize baby wear leaving everything clean and fresh. It can also be used as a household disinfectant and cleaner on surfaces or in laundry cleaning to kill germs. This liquid antiseptic is recommended by the Indian Medical Association and can be kept in your emergency first aid kit. "
@@ -326,15 +330,15 @@ var contentDiv=document.getElementById("button-info");
 
         var contentdiv1=document.createElement("div");
         contentdiv1.style.display="flex";
-        contentdiv1.style.gap="7px"
+        contentdiv1.style.gap="2px"
         contentdiv1.style.marginBottom="-10px"
         
         var span=document.createElement("p");
-        span.textContent="Dettol Antiseptic Liquid";
+        span.textContent="";
         
         
         var description1=document.createElement("p");
-        description1.textContent="provides protection to you and your family against illness-causing germs and comes in a fresh pine fragrance. The topical antiseptic liquid sanitizes your home and helps maintain your personal hygiene."
+        description1.textContent="Dettol Antiseptic Liquid provides protection to you and your family against illness-causing germs and comes in a fresh pine fragrance. The topical antiseptic liquid sanitizes your home and helps maintain your personal hygiene."
   
         var description2=document.createElement('p');
         description2.textContent="The Dettol first aid antiseptic liquid can be used to protect against infection from cuts and scratches, disinfect toys, and sanitize baby wear leaving everything clean and fresh. It can also be used as a household disinfectant and cleaner on surfaces or in laundry cleaning to kill germs. This liquid antiseptic is recommended by the Indian Medical Association and can be kept in your emergency first aid kit. "
