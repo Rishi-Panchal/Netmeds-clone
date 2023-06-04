@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link
+      rel="icon"
+      href="https://lh3.googleusercontent.com/RllZf42XounX60rftJqa0K3EfoCMmzGqdOgbZvtQiPETcOVaes8cw1bEeBhW7UGeNb0=h200"
+      type="image/x-icon"
+    />
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #f6f6f7;
+        }
+      #parent2{
+            width: 73%;
+            margin: auto;
+            display: flex;
+            background-color: white;
+            gap: 65px;
+            
+            margin-top: 50px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        #verifyButton{
+            width: 100%;
+            padding: 0.2px 10px 0.2px 10px;
+            background-color: #24aeb1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        #ver{
+            text-align: center;
+        }
+        #s{
+            color: #24aeb1;
+            margin-bottom: 0px;
+        }
+        #lo{
+            width: 100%;
+            -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            outline: 100;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            border-radius: 0;
+            box-sizing: content-box;
+            background-color: transparent;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+        <div id="parent2">
+            <div id="left">
+                <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1680000865_New_Dest_deal.png" alt="">
+            </div>
+            <div id="right">
+                <h2>Create Account</h2>
+                <p id="s">EMAIL ID</p>
+                <input id="lo"
+                    id="email"
+                    class="mfstdDiv"
+                    type="text"
+                    placeholder="Enter your email"
+                    required
+                />
+                <p id="s">FIRST NAME</p>
+                <input id="lo"
+                    id="firstname"
+                    type="text"
+                    placeholder="enter first name"
+                    required
+                />
+                <p id="s">LAST NAME</p>
+                <input id="lo"
+                    id="lastname"
+                    type="text"
+                    placeholder="enter last name"
+                    required
+                />
+                
+                <p>Verifying Number <div id="call" class="mscndBox"><p>We have Sent OTP on</p> </div>
+                </p>
+                  <input id="otp" placeholder="OTP" />
+                  <p id="valid"></p>
+                  <div id="verifyButton" class="mfourBox">
+                    <p id="ver">V E R I F Y</p>
+                  </div>
+            </div>
+        </div>
+  </body>
+</html>
+<script>
+  var mobile = JSON.parse(localStorage.getItem("mobile-data")) || [];
+  // console.log(mobile[0])
+
+  document.getElementById("call").innerText =mobile[0];
+
+  var valid = document.getElementById("valid");
+
+  var verifyButton = document.getElementById("verifyButton");
+  verifyButton.addEventListener("click", verifyOTP);
+
+//   var mark = document.getElementById("mark");
+//   mark.addEventListener("click", decline);
+//   function decline() {
+//     window.location.href = "sign-in.html";
+//   }
+
+  function verifyOTP() {
+    verifyButton.style.backgroundColor = "gray";
+    var otp = document.getElementById("otp").value;
+    // console.log(otp);
+    if (otp != "1234") {
+      valid.innerText = "invalid OTP";
+    } else {
+      window.location.href = "index.html";
+    }
+  }
+</script>
