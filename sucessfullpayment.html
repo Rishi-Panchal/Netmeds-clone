@@ -20,7 +20,7 @@
 #gif {
      width: 10%;
     height: 10%;
-    padding-left: 680px;
+    /* padding-left: 680px; */
 }
 .parent >h2 {
     text-align: center;
@@ -43,7 +43,7 @@
   width: 13%;
   height: 30px;
   background-color: rgb(51,63,72);;
-  /* color: #f2f2f5; */
+  color: #f2f2f5;
   border-radius: 5px;
 }
 .parent>p{
@@ -59,7 +59,7 @@
      </style>
   </head>
   <body>
-    <div class="parent">
+    <div class="parent" style="margin: auto;text-align: center;">
         
       <h2>Payment Successful</h2>
       <img
@@ -70,8 +70,12 @@
       <h2>Your Order has been Successfully Placed</h2>
       <p >Order Id :-# <span id="Orderid">1</span></p>
       <div id="yui">
-
+       
       </div>
+      <div id="adress" style="text-align: center;">
+     <h2 style="color: rgb(37, 147, 155);">ADDRESS</h2>
+      </div>
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/thank-you-for-shopping-with-us-flyer-design-template-f5c4c2e4ab93f102c46becd8feb1c5b3.jpg?ts=1618347130" alt="">
     </div>
     <a id="link" href="index.html"><button> Return to Home Page</button></a>
    
@@ -81,26 +85,61 @@
   var kite=localStorage.getItem("name1");
   var pre=localStorage.getItem("cartper");
   var tree=localStorage.getItem("cartp");
-  
-    var  p=document.createElement("p");
-    p.textContent="No of Items:"+pre;
+  var arr=JSON.parse(localStorage.getItem("form-address"))|| [];
+    // var  p=document.createElement("p");
+    // p.textContent="No of Items:"+pre;
 
-    var pa=document.createElement("p");
-    pa.textContent="Total price:-Rs. "+tree;
+    // var pa=document.createElement("p");
+    // pa.textContent="Total price:-Rs. "+tree;
 
-    var na=document.createElement("p");
-    na.textContent="Name:"+kite;
+    // var na=document.createElement("p");
+    // na.textContent="Name:"+kite;
     var dert=localStorage.getItem("add")
-    var adress=document.createElement("p");
-    adress.textContent="Address:"+dert;
+    
+     
+    arr.map((ele,idx)=>{
 
-    var img=document.createElement("img");
-       img.setAttribute("src","https://d1csarkz8obe9u.cloudfront.net/posterpreviews/thank-you-for-shopping-with-us-flyer-design-template-f5c4c2e4ab93f102c46becd8feb1c5b3.jpg?ts=1618347130");
-       img.setAttribute("id","carry");
+   
+    
+    var tr=document.createElement("div");
 
-    document.querySelector("#yui").append(p,pa,na,img);
+    var td4=document.createElement("p");
+    td4.textContent="Name: "+ele.namefirst+" "+ele.namelast;
+
+    var td1=document.createElement("p");
+    td1.textContent= "Pincode: "+ele.pincode;
+
+    var td2=document.createElement("p");
+    td2.textContent="City: "+ele.city;
+
+    var td3=document.createElement("p");
+    td3.textContent="State: "+ele.state;
+
+   
+
+    
+
+
+    var td6=document.createElement("p");
+    td6.textContent="Address: "+ele.address;
+
+     var td7=document.createElement("p");
+    td7.textContent="Phone Number: "+ele.phone;
+
+  
+    tr.append(td4,td2,td3,td1,td6,td7);
+     document.getElementById("adress").append(tr);
+})
+
+
+    // var img=document.createElement("img");
+    //    img.setAttribute("src",);
+    //    img.setAttribute("id","carry");
+
+    // document.querySelector("#yui").append(na);
     var p=Math.floor((Math.random() * 10000) + 1);
     document.getElementById("Orderid").textContent=p;
+    console.log(p);
 
   
 </script>

@@ -4,6 +4,7 @@ var totalprice=0;
 var payableamount=0;
  var totalmrp=JSON.parse(localStorage.getItem("totalprice"));
  totalpayableam=JSON.parse(localStorage.getItem("tp"));
+ var pkj=localStorage.getItem("totalpsb");
 displayfun(dataArr);
 function displayfun(){
     document.getElementById("divdisplay").textContent="";
@@ -62,11 +63,11 @@ function displayfun(){
         var pankajdis=130
         var discountadditional=document.getElementById("adiscount").textContent="-"+"Rs."+pankajdis;
          var totalpayment=total-pankajdis;
-        document.getElementById("totalamount").textContent="Rs."+ totalpayment;
+        document.getElementById("totalamount").textContent="Rs."+ pkj;
 
-        totalpayableam=document.getElementById("payabletotal").textContent="Rs."+ totalpayment;
-        localStorage.setItem("tp",JSON.stringify(totalpayableam))
-        localStorage.setItem("payablemoney",JSON.stringify(totalpayment))
+        totalpayableam=document.getElementById("payabletotal").textContent="Rs."+ pkj;
+        // localStorage.setItem("tp",JSON.stringify(totalpayableam))
+        // localStorage.setItem("payablemoney",JSON.stringify(totalpayment))
         document.getElementById("totalsave").textContent="Rs."+pankajdis
 
         document.getElementById("divdisplay").append(div);

@@ -3,7 +3,10 @@
   font-family: 'Roboto',sans-serif;
    
 }
-
+#inccount{
+  color: white;
+  font-weight: bold;
+}
 #raw1 {
   padding: 14px 0 0 7px;
   display: flex;
@@ -147,7 +150,7 @@ body{
   padding: 50px;
   border-radius: 30px;
  
-  background-color: rgb(36,174,177);
+  background-color: black;
   top: 30%;
   left: 35%;
   text-align: center;
@@ -379,7 +382,7 @@ border-radius: 15px;
   width: 30px;
   height: 20px;
   color: white;
-  background-color: red;
+  background-color: rgb(36,174,177);
   border: none;
   border-radius: 5px;
   margin-top: 20px;

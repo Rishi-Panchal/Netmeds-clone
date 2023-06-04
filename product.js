@@ -13,6 +13,7 @@ function slide3(){
 setInterval(slide1,2000);
 setInterval(slide2,4000);
 setInterval(slide3,6000);
+setInterval(slide1,8000)
 
 var arr=[
     {
@@ -357,11 +358,11 @@ var descItem=[];
              window.location.href="productdesc.html"
 }
 var prior=JSON.parse(localStorage.getItem("cart-product"))|| [];
-document.getElementById("increaseCount").textContent=prior.length
+document.getElementById("cartcount").textContent=prior.length
 function addTocart(ele){
     prior.push(ele);
     localStorage.setItem("cart-product",JSON.stringify(prior));
-    
+    document.getElementById("cartcount").textContent=prior.length
     displayData();
 }
 

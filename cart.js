@@ -73,7 +73,7 @@ if(cart.length==0){
         mrp.textContent="₹"+ele.mrp;
 
         var  p=document.createElement("p");
-        p.textContent="Delivery between MAY 30-MAY 31"
+        p.textContent="Delivery between JUNE 06-JUNE 07"
 
         divDetailsCart.append(name,mfr,price,mrp,p);
 
@@ -113,7 +113,7 @@ if(cart.length==0){
              mrp.textContent="₹"+ver;
              var a= document.getElementById("total").textContent;
             var last=Number(a)+Number(ele.price);
-            var dis=130;
+            var dis=130
             document.getElementById("total").textContent=(last);
             document.getElementById("adi").textContent=dis;
     var totalAmountof=parseInt(last)-Number(dis)
@@ -180,7 +180,7 @@ if(cart.length==0){
  
   function totalprice(){
     var total=0;
-    var dis=130
+    var dis=130;
     for(var i=0;i<cart.length;i++){
       total+=parseInt(cart[i].price);
     }
@@ -235,7 +235,8 @@ if(cart.length==0){
 
     
     document.getElementById("tota").textContent= t - change;
-    document.getElementById("payabl").textContent= t - change;
+    var pkj= document.getElementById("payabl").textContent= t - change;
+    localStorage.setItem("totalpsb",JSON.stringify(pkj))
     
     document.getElementById("proicediv").textContent= t - change;
         }

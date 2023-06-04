@@ -297,10 +297,13 @@ var descItem=[];
             localStorage.setItem("product-desc",JSON.stringify(descItem));
              window.location.href="productdesc.html"
 }
+
 var prior=JSON.parse(localStorage.getItem("cart-product"))|| [];
+document.getElementById("cartcount").textContent=prior.length;
 function addTocart(ele){
     prior.push(ele);
     localStorage.setItem("cart-product",JSON.stringify(prior));
+    document.getElementById("cartcount").textContent=prior.length;
     displayData();
 }
 

@@ -1,4 +1,5 @@
 var pay=localStorage.getItem("payablemoney");
+var pkj=localStorage.getItem("totalpsb");
 function showbutton(){
     document.getElementById("radio").style.display="none"
     // document.getElementById("radio").style.cursor="pointer"
@@ -152,12 +153,12 @@ document.addEventListener('DOMContentLoaded', () => {
        var payableam=JSON.parse( localStorage.getItem("tp"));
         var totalmrp=document.getElementById('totalmrp1').textContent=tp;
         
-        var pankajdiscount=126
+        var pankajdiscount=130
         var discountadditional=document.getElementById("adiscount1").textContent="Rs. "+pankajdiscount;
          var totalpayment=Number(tp)+Number(pankajdiscount);
-        document.getElementById("totalamount1").textContent=tp;
+        document.getElementById("totalamount1").textContent=pkj;
 
-        document.getElementById("payabletotal1").textContent=payableam;
+        document.getElementById("payabletotal1").textContent= pkj;
         // localStorage.setItem("payablemoney",JSON.stringify(totalpayment))
         document.getElementById("totalsave1").textContent="Rs."+pankajdiscount
 

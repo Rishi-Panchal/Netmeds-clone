@@ -163,7 +163,7 @@ border-bottom-right-radius: 15px;
 #divdisplayright{
     width: 25%;
     border: 1px solid rgb(36,174,177);
-    
+    height: 50vh;
     border-radius: 15px;
     padding: 20px;
     /* text-align: center; */

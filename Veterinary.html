@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verterinary</title>
+    <title>product</title>
     <link rel="stylesheet" href="product.css">
+    
 </head>
-<body>
+<body onload="myFunction()">
   <header class="sticky-header">
     <div id="raw1">
       <div id="logo1">
-          <img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt="">
+          <a href="index.html"><img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt=""></a>
       </div>
       <div id="insideRaw1">
         <div>
@@ -33,10 +34,10 @@
           <p>Offer</p>
         </div>
       </a>
-      <a  href="#####">
+      <a  href="./cart.html">
         <div class="line1">
           <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\cart_icon.svg" alt="">
-          <p>Cart</p> 
+          <p>Cart <span id="cartcount"></span></p> 
         </div>
       </a>
       <a id="line2" href="#####">
@@ -123,14 +124,14 @@
           <h4>Brands</h4>
           <span class="searchdata"><input type="search" placeholder="Search" ><button><ion-icon name="search-outline"></ion-icon></button></span>
           
-          <iframe src="./iframe.html" frameborder="1" style="width: 100%;height:200px;border: none;">
+          <iframe src="./iframe.html" frameborder="1" style="width: 100%;height:205px;border: none;">
             
           </iframe>
           <div id="opera1">
             <h4>Manufacturers</h4>
             <span class="searchdata"><input type="search" placeholder="Search" ><button><ion-icon name="search-outline"></ion-icon></button></span>
            </div>
-           <iframe src="./iframe2.html" frameborder="1" style="width: 100%;height:200px;border: none;"></iframe>
+           <iframe src="./iframe2.html" frameborder="1" style="width: 100%;height:205px;border: none;"></iframe>
           
          </div>
         
@@ -169,7 +170,6 @@
           </div>
     </div>
 </div>
-    
 <div id="fullcolor">
 
     
@@ -237,9 +237,23 @@
        </div>
   </div>
 </div>
-</div> 
+</div>
+
+<section>
+  <div class="propopup">
+    <p id="productpop"></p>
+  </div>
+</section>
+
+
+
+
+
 </body>
-<script src="veterinary.js"></script>
+<!-- <script src="product.js"></script> -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="veterinary.js"></script>
 </html>
