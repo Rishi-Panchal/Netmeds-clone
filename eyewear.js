@@ -303,7 +303,10 @@ function addTocart(ele){
     document.getElementById("cartcount").textContent=prior.length;
     displayData();
 }
-
+var nam=localStorage.getItem("namesign");
+var logout=document.getElementById("user")
+// logout.addEventListener("click",gologout)
+    document.getElementById("user").textContent=nam
 var lth=document.getElementById("lth").addEventListener("click",lowtoh);
 function lowtoh(){
     var filter=arr.sort((a,b)=>{

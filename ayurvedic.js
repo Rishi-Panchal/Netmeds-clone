@@ -162,7 +162,10 @@ setInterval(slide1,2000);
 setInterval(slide2,4000);
 setInterval(slide3,6000);
 
-
+var nam=localStorage.getItem("namesign");
+var logout=document.getElementById("user")
+// logout.addEventListener("click",gologout)
+    document.getElementById("user").textContent=nam
 // var cart=JSON.parse(localStorage.getItem("product"))||[];
 
 // localStorage.setItem("product",JSON.stringify(cart))

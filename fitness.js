@@ -254,7 +254,10 @@ function displayData(){
 
     })
 }
-
+var nam=localStorage.getItem("namesign");
+var logout=document.getElementById("user")
+// logout.addEventListener("click",gologout)
+    document.getElementById("user").textContent=nam
 function popup(){
     setTimeout(()=>{
         document.getElementById('productpop').textContent='Item added to cart...'

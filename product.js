@@ -400,6 +400,10 @@ function pope(){
     displayData(filterdis);
     console.log(filterdis);
 }
+var nam=localStorage.getItem("namesign");
+var logout=document.getElementById("user")
+// logout.addEventListener("click",gologout)
+    document.getElementById("user").textContent=nam
 // {
 //     img1:"",
 //     img2:"",

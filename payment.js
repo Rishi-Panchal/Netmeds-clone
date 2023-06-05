@@ -7,14 +7,17 @@ function showbutton(){
     btn.addEventListener("click",()=>{
         redirectTootp();
     })
-    btn.textContent="Pay"+" "+"Rs. "+pay;
+    btn.textContent="Pay"+" "+"Rs. "+pkj;
     document.getElementById("buttonofpay").append(btn);
     
 }
 function redirectTootp(){
     window.location.href="./otp.html";
 }
-
+var nam=localStorage.getItem("namesign");
+var logout=document.getElementById("user")
+// logout.addEventListener("click",gologout)
+    document.getElementById("user").textContent=nam
 
 // >>>>>>>>>>>>>>>>>>>>>>JS code for form credit
 document.addEventListener('DOMContentLoaded', () => {
@@ -139,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener("click",()=>{
             redirecttopage();
         })
-        btn.textContent="Pay"+" "+"Rs. "+pay;
+        btn.textContent="Pay"+" "+"Rs. "+pkj;
         document.getElementById("btnofpaytm").append(btn);
         
     }

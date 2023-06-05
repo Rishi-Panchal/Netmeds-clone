@@ -21,7 +21,10 @@ const swiper = new Swiper('.swiper', {
   });
 
 
-
+  var nam=localStorage.getItem("namesign");
+  var logout=document.getElementById("user")
+  // logout.addEventListener("click",gologout)
+      document.getElementById("user").textContent=nam
 var cart=JSON.parse(localStorage.getItem("cart-product"))||[];
 
 
@@ -95,7 +98,7 @@ if(cart.length==0){
         var span=document.createElement("span");
         span.textContent=""+"1";
 
-        document.getElementById("inccount").textContent=cart.length;
+        document.getElementById("cartcount").textContent=cart.length;
 
 
       var increase=document.createElement("button");

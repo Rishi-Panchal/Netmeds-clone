@@ -269,6 +269,10 @@ function popup(){
     },4000)
     
 }
+var nam=localStorage.getItem("namesign");
+var logout=document.getElementById("user")
+// logout.addEventListener("click",gologout)
+    document.getElementById("user").textContent=nam
 
 function hidepopup(){
     setTimeout(()=>{
