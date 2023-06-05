@@ -297,6 +297,10 @@ function check(name){
         return false;
     }
 }
+var nam=localStorage.getItem("namesign");
+var logout=document.getElementById("user")
+// logout.addEventListener("click",gologout)
+    document.getElementById("user").textContent=nam
 
 var descItem=[];
         function nextPage(ele){
